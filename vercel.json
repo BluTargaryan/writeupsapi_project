@@ -1,0 +1,14 @@
+{
+    "builds": [
+      {
+        "src": "writeupsapi_project/wsgi.py",
+        "use": "@vercel/python"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "writeupsapi_project/wsgi.py"
+      }
+    ]
+  }
